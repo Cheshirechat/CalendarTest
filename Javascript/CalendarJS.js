@@ -5,6 +5,9 @@ var h1 = document.querySelector('h1');
 select.onchange = function() {
   var choice = select.value;
   var days = 31;
+  if (choice === " ") {
+    days = 0;
+  }
 
   if( choice === 'February' ) {
     days = 28;
